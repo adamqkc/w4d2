@@ -1,4 +1,4 @@
-const settings = require('./settings.json')
+const settings = require('./settings');
 
 const first_name = process.argv[2];
 const last_name = process.argv[3];
@@ -23,3 +23,5 @@ knex('famous_people').insert({
   .then(() => {
     console.log(`${first_name} ${last_name} successfully added!`);
   })
+
+
